@@ -1,0 +1,1 @@
+console.log("Website Wisata Gunung Bromo berhasil dimuat.");
