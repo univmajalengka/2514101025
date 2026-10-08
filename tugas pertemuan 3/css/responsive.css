@@ -1,0 +1,154 @@
+@media (max-width: 1000px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 12px;
+    }
+
+    .site-brand {
+        padding: 9px 0 3px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 0 9px;
+    }
+
+    section {
+        padding: 65px 5%;
+    }
+
+    .destination-container,
+    .package-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .info-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    nav {
+        gap: 10px 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        scroll-padding-top: 125px;
+    }
+
+    nav {
+        width: 100%;
+        gap: 2px;
+        padding: 8px 0 10px;
+    }
+
+    nav a {
+        min-height: 35px;
+        padding: 0 8px;
+        font-size: .76rem;
+    }
+
+    nav a::after {
+        right: 8px;
+        bottom: 3px;
+        left: 8px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+
+    #home {
+        min-height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content > p:not(.hero-label) {
+        font-size: .98rem;
+    }
+
+    .map-container {
+        aspect-ratio: 4 / 3;
+    }
+
+    .hero-toggle {
+        right: 5%;
+        bottom: 18px;
+    }
+
+    .about-container {
+        padding: 22px;
+    }
+
+    .about-text p {
+        font-size: .95rem;
+        text-align: left;
+    }
+
+    .destination-container,
+    .package-container,
+    .info-container,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card img {
+        height: 230px;
+    }
+
+    .gallery img {
+        height: 240px;
+    }
+
+    .package-card {
+        padding: 25px 22px;
+    }
+
+    .social-container {
+        max-width: 360px;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 25px auto 0;
+    }
+
+    .social-link {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 6% 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+    }
+
+    .hero-slide {
+        transition: none;
+        transform: none;
+    }
+}

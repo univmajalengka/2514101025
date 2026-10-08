@@ -1,0 +1,79 @@
+#back-to-top:focus-visible,
+#gallery-lightbox button:focus-visible {
+    outline: 3px solid var(--sunrise);
+    outline-offset: 3px;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--earth);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
+    transition: opacity .25s, visibility .25s, transform .25s;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .65s ease, transform .65s ease;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery img {
+    cursor: zoom-in;
+}
+
+#gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, .9);
+}
+
+#gallery-lightbox.open {
+    display: flex;
+}
+
+#gallery-lightbox img {
+    max-width: 92vw;
+    max-height: 85vh;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+#gallery-lightbox button {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    border: 0;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 38px;
+}

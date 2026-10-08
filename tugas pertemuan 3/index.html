@@ -5,271 +5,351 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wisata Gunung Bromo</title>
+    <meta name="description" content="Jelajahi keindahan Gunung Bromo, mulai dari matahari terbit, lautan pasir, kawah, hingga informasi tiket wisata.">
+    <meta name="theme-color" content="#302923">
+
+    <title>Wisata Gunung Bromo | Pesona Alam Indonesia</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/interactions.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================= -->
-
+    <!-- NAVBAR -->
     <header>
-        <nav>
+        <a class="site-brand" href="#home" aria-label="Wisata Gunung Bromo, kembali ke beranda">
+            <span class="brand-mark" aria-hidden="true">B</span>
+            <span class="brand-name">Bromo<span class="brand-accent">.</span><small>JAWA TIMUR</small></span>
+        </a>
+        <nav aria-label="Navigasi utama">
             <a href="#home">Home</a>
             <a href="#tentang">Tentang</a>
             <a href="#destinasi">Destinasi</a>
+            <a href="#informasi">Informasi</a>
+            <a href="#peta">Peta</a>
             <a href="#paket">Paket Wisata</a>
             <a href="#galeri">Galeri</a>
             <a href="#video">Video</a>
+            <a href="#kontak">Media Sosial</a>
         </nav>
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================= -->
-
+    <!-- HERO -->
     <section id="home">
-
-        <div class="hero-content">
-
-            <h1>Wisata Gunung Bromo</h1>
-
-            <p>
-                Nikmati keindahan alam dan pengalaman wisata
-                yang tak terlupakan di Gunung Bromo.
-            </p>
-
-            <a href="#paket">Lihat Paket Wisata</a>
-
+        <div class="hero-slides" aria-hidden="true">
+            <img class="hero-slide is-active" src="images/bromo-1.jpg" alt="">
+            <img class="hero-slide" src="images/bromo-2.jpg" alt="">
+            <img class="hero-slide" src="images/bromo-3.jpg" alt="">
+            <img class="hero-slide" src="images/bromo-4.jpg" alt="">
+            <img class="hero-slide" src="images/bromo-5.jpg" alt="">
         </div>
 
+        <div class="hero-content">
+            <p class="hero-label">PESONA ALAM JAWA TIMUR</p>
+
+            <h1>Menjelajahi Keindahan Gunung Bromo</h1>
+
+            <p>
+                Saksikan matahari terbit, hamparan lautan pasir,
+                dan panorama pegunungan yang menghadirkan
+                pengalaman wisata alam tak terlupakan.
+            </p>
+
+            <a href="#destinasi">Jelajahi Bromo</a>
+        </div>
+
+        <button class="hero-toggle" type="button" aria-label="Jeda pergantian foto" title="Jeda pergantian foto">
+            <span aria-hidden="true">Ⅱ</span>
+        </button>
     </section>
 
 
-    <!-- =========================
-         TENTANG
-    ========================= -->
-
+    <!-- TENTANG BROMO -->
     <section id="tentang">
-
         <h2>Tentang Gunung Bromo</h2>
 
-        <p>
-            Gunung Bromo merupakan salah satu destinasi wisata
-            alam yang terkenal di Indonesia. Keindahan matahari
-            terbit, lautan pasir, dan pemandangan pegunungan
-            menjadi daya tarik utama bagi wisatawan.
-        </p>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Gunung Bromo merupakan gunung berapi aktif yang
+                    berada di kawasan Taman Nasional Bromo Tengger Semeru,
+                    Jawa Timur. Kawasan ini dikenal dengan pemandangan
+                    alamnya yang khas, mulai dari pegunungan,
+                    lautan pasir, hingga kawah yang menjadi daya tarik
+                    wisatawan dari berbagai daerah.
+                </p>
 
+                <p>
+                    Salah satu pengalaman paling terkenal di Bromo
+                    adalah menyaksikan matahari terbit dari kawasan
+                    Penanjakan. Ketika matahari mulai muncul, cahaya
+                    pagi menyinari bentang pegunungan dan menciptakan
+                    panorama yang mengesankan.
+                </p>
+
+                <p>
+                    Selain keindahan alamnya, kawasan Bromo juga
+                    memiliki hubungan erat dengan masyarakat Suku
+                    Tengger yang menjaga tradisi dan kebudayaan
+                    setempat. Karena itu, berwisata ke Bromo bukan
+                    hanya tentang menikmati pemandangan, tetapi juga
+                    mengenal kekayaan alam dan budaya Indonesia.
+                </p>
+            </div>
+        </div>
     </section>
 
 
-    <!-- =========================
-         DESTINASI
-    ========================= -->
-
+    <!-- DESTINASI -->
     <section id="destinasi">
-
         <h2>Destinasi & Kegiatan</h2>
+
+        <p class="section-description">
+            Temukan berbagai tempat menarik yang bisa kamu kunjungi
+            saat menjelajahi kawasan Gunung Bromo.
+        </p>
 
         <div class="destination-container">
 
             <div class="destination-card">
-
-                <img
-                    src="images/bromo-2.jpg"
-                    alt="Penanjakan Gunung Bromo">
+                <img src="images/bromo-2.jpg"
+                     alt="Pemandangan matahari terbit dari Penanjakan">
 
                 <div class="destination-content">
-
                     <h3>Penanjakan</h3>
-
                     <p>
-                        Nikmati pemandangan matahari terbit dengan
-                        latar Gunung Bromo dan pegunungan di sekitarnya.
+                        Nikmati panorama matahari terbit dengan latar
+                        Gunung Bromo dan pegunungan di sekitarnya.
+                        Datanglah lebih awal untuk mendapatkan
+                        pengalaman terbaik.
                     </p>
-
                 </div>
-
             </div>
 
-
             <div class="destination-card">
-
-                <img
-                    src="images/bromo-3.jpg"
-                    alt="Lautan Pasir Gunung Bromo">
+                <img src="images/bromo-3.jpg"
+                     alt="Hamparan lautan pasir di kawasan Bromo">
 
                 <div class="destination-content">
-
                     <h3>Lautan Pasir</h3>
-
                     <p>
-                        Menjelajahi hamparan lautan pasir yang menjadi
-                        salah satu daya tarik utama kawasan Bromo.
+                        Hamparan pasir luas yang memberikan suasana
+                        unik dan menjadi salah satu ciri khas
+                        kawasan wisata Gunung Bromo.
                     </p>
-
                 </div>
-
             </div>
 
-
             <div class="destination-card">
-
-                <img
-                    src="images/bromo-4.jpg"
-                    alt="Kawah Gunung Bromo">
+                <img src="images/bromo-4.jpg"
+                     alt="Kawasan kawah Gunung Bromo">
 
                 <div class="destination-content">
-
                     <h3>Kawah Bromo</h3>
-
                     <p>
-                        Mengunjungi kawasan kawah Gunung Bromo dan
-                        menikmati pemandangan alam di sekitarnya.
+                        Jelajahi kawasan sekitar kawah untuk melihat
+                        lebih dekat bentang alam vulkanik Bromo.
+                        Selalu patuhi batas aman dan petunjuk petugas.
                     </p>
-
                 </div>
-
             </div>
 
         </div>
-
     </section>
 
 
-   <!-- =========================
-     PAKET WISATA
-========================= -->
+    <!-- INFORMASI BROMO -->
+    <section id="informasi">
+        <h2>Kenali Gunung Bromo</h2>
 
-<section id="paket">
+        <p class="section-description">
+            Beberapa informasi menarik sebelum kamu merencanakan
+            perjalanan ke Bromo.
+        </p>
 
-    <h2>Paket Tiket Bromo</h2>
+        <div class="info-container">
 
-    <div class="package-container">
+            <div class="info-card">
+                <h3>Lokasi</h3>
+                <p>
+                    Kawasan Taman Nasional Bromo Tengger Semeru,
+                    Jawa Timur.
+                </p>
+            </div>
 
-        <div class="package-card">
+            <div class="info-card">
+                <h3>Fenomena Alam</h3>
+                <p>
+                    Terkenal dengan matahari terbit, lautan pasir,
+                    dan lanskap gunung berapi.
+                </p>
+            </div>
 
-            <h3>Tiket Hari Kerja</h3>
+            <div class="info-card">
+                <h3>Budaya Lokal</h3>
+                <p>
+                    Kawasan ini memiliki kaitan erat dengan
+                    masyarakat Suku Tengger dan tradisinya.
+                </p>
+            </div>
 
-            <p class="price">Rp54.000</p>
-
-            <p>
-                Tiket masuk kawasan wisata Gunung Bromo
-                untuk kunjungan pada hari kerja.
-            </p>
-
-            <ul>
-                <li>Akses kawasan wisata</li>
-                <li>Tiket masuk Bromo</li>
-                <li>Berlaku untuk satu hari</li>
-            </ul>
-
-        </div>
-
-
-        <div class="package-card">
-
-            <h3>Tiket Hari Libur</h3>
-
-            <p class="price">Rp79.000</p>
-
-            <p>
-                Tiket masuk kawasan wisata Gunung Bromo
-                untuk kunjungan pada hari libur.
-            </p>
-
-            <ul>
-                <li>Akses kawasan wisata</li>
-                <li>Tiket masuk Bromo</li>
-                <li>Berlaku untuk satu hari</li>
-            </ul>
+            <div class="info-card">
+                <h3>Persiapan Wisata</h3>
+                <p>
+                    Bawa jaket hangat, gunakan alas kaki nyaman,
+                    dan periksa informasi kunjungan sebelum berangkat.
+                </p>
+            </div>
 
         </div>
 
+        <p class="info-note">
+            Catatan: kondisi cuaca, akses, tarif, dan aturan kunjungan
+            dapat berubah. Periksa pengumuman resmi sebelum bepergian.
+        </p>
+    </section>
 
-        <div class="package-card">
+    <!-- PETA LOKASI -->
+    <section id="peta">
+        <h2>Lokasi Gunung Bromo</h2>
 
-            <h3>Booking Online</h3>
+        <p class="section-description">
+            Lihat lokasi kawasan Gunung Bromo di peta dan
+            rencanakan perjalananmu sebelum berangkat.
+        </p>
 
-            <p class="price">Resmi TNBTS</p>
+        <div class="map-container">
+            <iframe
+                src="https://maps.google.com/maps?q=Mount%20Bromo%2C%20Indonesia&z=11&output=embed"
+                title="Peta lokasi Gunung Bromo, Jawa Timur"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+        </div>
 
-            <p>
-                Lakukan pemesanan tiket melalui sistem
-                booking resmi Taman Nasional Bromo
-                Tengger Semeru.
-            </p>
+        <p class="map-link">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Bromo%2C+Indonesia"
+               target="_blank"
+               rel="noopener noreferrer">
+                Buka di Google Maps ↗
+            </a>
+        </p>
+    </section>
 
-            <ul>
-                <li>Pemesanan secara online</li>
-                <li>Sistem resmi TNBTS</li>
-                <li>Pilih tanggal kunjungan</li>
-            </ul>
+
+    <!-- PAKET TIKET -->
+    <section id="paket">
+        <h2>Informasi Tiket Wisata</h2>
+
+        <p class="section-description">
+            Kenali pilihan tiket dan lakukan pemesanan melalui
+            kanal resmi sebelum berkunjung.
+        </p>
+
+        <div class="package-container">
+
+            <div class="package-card">
+                <h3>Tiket Hari Kerja</h3>
+
+                <p class="price">Cek tarif terbaru</p>
+
+                <p>
+                    Tarif kunjungan hari kerja dapat berubah.
+                    Pastikan harga dan ketentuan terbaru sebelum
+                    melakukan pemesanan.
+                </p>
+
+                <ul>
+                    <li>Untuk kunjungan hari kerja</li>
+                    <li>Periksa ketentuan tiket</li>
+                    <li>Pastikan tarif terbaru</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>Tiket Hari Libur</h3>
+
+                <p class="price">Cek tarif terbaru</p>
+
+                <p>
+                    Tarif kunjungan hari libur dapat berubah.
+                    Periksa harga dan ketentuan terbaru melalui
+                    kanal resmi.
+                </p>
+
+                <ul>
+                    <li>Untuk kunjungan hari libur</li>
+                    <li>Periksa ketentuan tiket</li>
+                    <li>Pastikan tarif terbaru</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>Booking Online</h3>
+
+                <p class="price">Resmi TNBTS</p>
+
+                <p>
+                    Gunakan kanal resmi untuk mencari informasi
+                    pemesanan, tanggal kunjungan, dan ketentuan
+                    masuk kawasan wisata.
+                </p>
+
+                <ul>
+                    <li>Pemesanan secara online</li>
+                    <li>Informasi resmi kawasan</li>
+                    <li>Periksa jadwal kunjungan</li>
+                </ul>
+            </div>
 
         </div>
 
-    </div>
+        <div class="ticket-button">
+            <a href="https://bromotenggersemeru.id/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Kunjungi Situs Resmi TNBTS
+            </a>
+        </div>
+    </section>
 
 
-    <div class="ticket-button">
-
-        <a
-            href="https://bromotenggersemeru.id/"
-            target="_blank">
-            Beli Tiket Resmi TNBTS
-        </a>
-
-    </div>
-
-</section>@
-
-
-    <!-- =========================
-         GALERI
-    ========================= -->
-
+    <!-- GALERI -->
     <section id="galeri">
-
         <h2>Galeri Gunung Bromo</h2>
 
+        <p class="section-description">
+            Sekilas keindahan alam Bromo yang membuat banyak
+            wisatawan ingin kembali berkunjung.
+        </p>
+
         <div class="gallery">
+            <img src="images/bromo-1.jpg"
+                 alt="Panorama Gunung Bromo">
 
-            <img
-                src="images/bromo-1.jpg"
-                alt="Pemandangan Gunung Bromo">
+            <img src="images/bromo-2.jpg"
+                 alt="Pemandangan pegunungan Bromo">
 
-            <img
-                src="images/bromo-2.jpg"
-                alt="Pemandangan Gunung Bromo">
+            <img src="images/bromo-3.jpg"
+                 alt="Lautan pasir Bromo">
 
-            <img
-                src="images/bromo-3.jpg"
-                alt="Pemandangan Gunung Bromo">
+            <img src="images/bromo-4.jpg"
+                 alt="Kawah Gunung Bromo">
 
-            <img
-                src="images/bromo-4.jpg"
-                alt="Pemandangan Gunung Bromo">
-
-            <img
-                src="images/bromo-5.jpg"
-                alt="Pemandangan Gunung Bromo">
-
+            <img src="images/bromo-5.jpg"
+                 alt="Keindahan alam kawasan Bromo">
         </div>
-
     </section>
 
 
-    <!-- =========================
-         VIDEO
-    ========================= -->
-
+    <!-- VIDEO -->
     <section id="video">
-
-        <h2>Video Gunung Bromo</h2>
+        <h2>Video Wisata Gunung Bromo</h2>
 
         <p class="video-description">
             Saksikan keindahan Gunung Bromo dan kawasan
@@ -277,33 +357,96 @@
         </p>
 
         <div class="video-container">
-
             <iframe
                 src="https://www.youtube.com/embed/m2L_AA6fagA"
-                title="Wisata Gunung Bromo"
+                title="Video wisata Gunung Bromo"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen>
             </iframe>
-
         </div>
-
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+    <!-- MEDIA SOSIAL -->
+    <section id="kontak">
+        <h2>Temukan Bromo di Media Sosial</h2>
 
-    <footer>
-
-        <p>
-            &copy; 2026 Wisata Gunung Bromo
+        <p class="section-description">
+            Jelajahi foto, komunitas, dan video tentang
+            Gunung Bromo di berbagai platform.
         </p>
 
+        <div class="social-container">
+
+            <a href="https://www.instagram.com/explore/tags/gunungbromo/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-link">
+                <span class="social-icon instagram-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="icon-dot" cx="18" cy="6" r="1"></circle></svg>
+                </span>
+                Instagram
+                <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://www.facebook.com/search/top?q=gunung%20bromo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-link">
+                <span class="social-icon facebook-icon" aria-hidden="true">f</span>
+                Facebook
+                <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://www.youtube.com/results?search_query=Gunung+Bromo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-link">
+                <span class="social-icon youtube-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path class="youtube-play" d="M9.5 7.5 17 12l-7.5 4.5z"></path><path d="M22 12c0 2.2-.3 4.4-.7 5.3-.4.9-1.1 1.5-2.1 1.7-1.7.4-7.2.4-7.2.4s-5.5 0-7.2-.4c-1-.2-1.7-.8-2.1-1.7C2.3 16.4 2 14.2 2 12s.3-4.4.7-5.3C3.1 5.8 3.8 5.2 4.8 5c1.7-.4 7.2-.4 7.2-.4s5.5 0 7.2.4c1 .2 1.7.8 2.1 1.7.4.9.7 3.1.7 5.3Z"></path></svg>
+                </span>
+                YouTube
+                <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+        <p class="social-note">
+            Tautan membuka hasil pencarian publik tentang Bromo,
+            bukan akun resmi khusus Gunung Bromo.
+        </p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3>Pesona Gunung Bromo</h3>
+
+            <p>
+                Mengenal keindahan alam, menjaga lingkungan,
+                dan menghargai budaya Indonesia.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#destinasi">Destinasi</a>
+                <a href="#peta">Peta</a>
+                <a href="#paket">Tiket Wisata</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 Wisata Gunung Bromo.
+                Dibuat untuk proyek pembelajaran web.
+            </p>
+        </div>
     </footer>
 
 
     <script src="js/script.js"></script>
 
 </body>
-
 </html>
