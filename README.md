@@ -1,6 +1,6 @@
 # Repository Tugas Perkuliahan Idham Al Hamasah
 
-Repository ini digunakan untuk menyimpan tugas mata kuliah PENGEMBANGAN APLIKASI BERBASIS WEB selama menempuh Program Studi Informatika di Universitas Majalengka.
+Repository ini digunakan untuk menyimpan tugas selama menempuh Program Studi Informatika di Universitas Majalengka.
 
 ## Informasi
 
